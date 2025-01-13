@@ -8,6 +8,7 @@ body {
 }
 
 /* ヘッダー */
+/* ヘッダー */
 header {
   background-color: #1A48A6;
   position: fixed;
@@ -46,7 +47,6 @@ header ul li a:hover {
 }
 
 /* メイン */
-
 main h1 {
   color: black;
   text-align: center;
@@ -59,12 +59,10 @@ main h1 {
   width: 100%;
 }
 
-/* ↓↓↓ 第４回課題 ↓↓↓ */
-
 /* ハンバーガーメニュー */
 .hamburger {
   position: absolute;
-  top: 10px;
+  top: 9px;
   right:32px;
   cursor: pointer;
   width: 32px;
@@ -95,8 +93,8 @@ main h1 {
 }
 .hamburger.open span:nth-of-type(1) {
   /*openのとき、上の線を右斜めにする*/
-  top: 10px;
-  transform: translateY(6px) rotate(-33deg);
+  top: 7px;
+  transform: translateY(6px) rotate(-40deg);
 }
 .hamburger.open span:nth-of-type(2) {
   /*真ん中の線を消す*/
@@ -104,24 +102,22 @@ main h1 {
 }
 .hamburger.open span:nth-of-type(3) {
   /*下の線を左斜めにする*/
-  top: 22px;
-  transform: translateY(-6px) rotate(33deg);
+  top: 19px;
+  transform: translateY(-6px) rotate(40deg);
 }
 
 .hamburger_menu {
   position: fixed;
   background-color: #1A48A6;
   width: 100%;
-  top: 45px;
+  top: 40px;
   z-index: 200;
   display: none;
-
 }
 
 .hamburger_menu li {
   text-align: center;
   text-decoration: none;
-  padding: 30px;
   border-bottom: 1px solid white;
   display: block;
 }
@@ -133,7 +129,8 @@ main h1 {
 .hamburger_menu li a {
   color: white;
   text-decoration: none;
-  
+  display: block;
+  padding: 20px;
 }
 /* ↑↑↑ 第４回課題 ↑↑↑ */
 
@@ -143,9 +140,20 @@ main h1 {
   }
 }
 
+@media screen and (min-width: 551px) {
+  .hamburger_menu li {
+      display: none;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .header-right {
       display: none;
+  }
+
+  main h1 {
+    top: 70%;
+    font-size: 30px;
   }
 
   .hamburger {
@@ -155,7 +163,7 @@ main h1 {
 
 @media screen and (max-width: 450px) {
   main h1 {
-      font-size: 25px;
+      font-size: 24px;
   }
   header ul li a {
       font-size: 12px;

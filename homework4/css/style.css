@@ -63,7 +63,7 @@ header ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 50px;
     width: 100%;
 }
@@ -108,7 +108,8 @@ header ul li a:hover {
     font-size: 30px;
     font-weight: 500;
     width: 100%;
-    margin: 30px auto;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 .form form {
@@ -150,7 +151,7 @@ input[type="submit"] {
 /* ハンバーガーメニュー */
 .hamburger {
     position: absolute;
-    top: 10px;
+    top: 9px;
     right:32px;
     cursor: pointer;
     width: 32px;
@@ -181,8 +182,8 @@ input[type="submit"] {
 }
 .hamburger.open span:nth-of-type(1) {
     /*openのとき、上の線を右斜めにする*/
-    top: 10px;
-    transform: translateY(6px) rotate(-33deg);
+    top: 5px;
+    transform: translateY(6px) rotate(-40deg);
 }
 .hamburger.open span:nth-of-type(2) {
     /*真ん中の線を消す*/
@@ -190,24 +191,22 @@ input[type="submit"] {
 }
 .hamburger.open span:nth-of-type(3) {
     /*下の線を左斜めにする*/
-    top: 22px;
-    transform: translateY(-6px) rotate(33deg);
+    top: 17px;
+    transform: translateY(-6px) rotate(40deg);
 }
 
 .hamburger_menu {
     position: fixed;
     background-color: #1A48A6;
     width: 100%;
-    top: 45px;
+    top: 40px;
     z-index: 200;
     display: none;
-
 }
 
 .hamburger_menu li {
     text-align: center;
     text-decoration: none;
-    padding: 30px;
     border-bottom: 1px solid white;
     display: block;
 }
@@ -219,7 +218,8 @@ input[type="submit"] {
 .hamburger_menu li a {
     color: white;
     text-decoration: none;
-    
+    display: block;
+    padding: 20px;
 }
 /* ↑↑↑ 第４回課題 ↑↑↑ */
 
@@ -280,6 +280,11 @@ input[type="submit"] {
         font-size: 30px;
     }
 
+    .form_contents {
+        width: 380px;
+        margin: 10px auto;
+    }
+
     .service-contents {
         flex-flow: column;
         margin-bottom: 10px;
@@ -300,7 +305,17 @@ input[type="submit"] {
     }
 }
 
+@media screen and (min-width: 551px) {
+    .hamburger_menu li {
+        display: none;
+    }
+  }
+
 @media screen and (max-width: 550px) {
+    .main-title h1 {
+        top: 60%;
+    
+    }
     .header-right {
         display: none;
     }
@@ -308,16 +323,48 @@ input[type="submit"] {
     .hamburger {
         display: block;
     }
+
+    .company_contents {
+        height: 200px;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .main-title h1 {
         font-size: 25px;
     }
+
     header ul li a {
         font-size: 12px;
     }
+
     .company_contents p {
         font-size: 20px;
     }
+
+    .form_contents {
+        width: 300px;
+        margin: 5px auto;
+    }
+
+    .company_contents {
+        height: 120px;
+    }
+
+    .company_contents h1 {
+        padding-top: 10px;
+        font-size: 20px;
+
+    }
+
+    input,select {
+        height: 25px;
+    }
+
+    input[type="submit"] {
+        height: 40px;
+        width: 150px;
+    }
+
 }
