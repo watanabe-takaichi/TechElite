@@ -73,7 +73,7 @@ header ul li a:hover {
 .title {
     color: black;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
     font-size: 30px;
     font-weight: 500;
     margin: 0 auto;
@@ -256,16 +256,21 @@ input[type="submit"] {
     background-color: #a7ff99;
 }
 
+@media screen and (max-width: 900px) {
+    .company_contents p {
+        font-size: 27px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .main-title h1 {
         font-size: 30px;
     }
 
     /* 第４回 */
-    .company_contents p {
-        font-size: 27px;
+    .title {
+        font-size: 28px;
     }
-
     .form_contents {
         width: 380px;
         margin: 10px auto;
