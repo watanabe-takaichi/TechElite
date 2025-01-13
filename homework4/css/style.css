@@ -73,10 +73,10 @@ header ul li a:hover {
 .title {
     color: black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
     font-size: 30px;
     font-weight: 500;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .company_contents p {
@@ -263,7 +263,7 @@ input[type="submit"] {
 
     /* 第４回 */
     .company_contents p {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .form_contents {
@@ -285,7 +285,7 @@ input[type="submit"] {
     }
 
     .service-text.show {
-        margin: 0 auto 30px;
+        margin: 0 auto;
         width: 240px;
         height: auto;
     }
@@ -300,7 +300,6 @@ input[type="submit"] {
 @media screen and (max-width: 550px) {
     .main-title h1 {
         top: 60%;
-    
     }
     .header-right {
         display: none;
@@ -321,7 +320,7 @@ input[type="submit"] {
     }
 
     .company_contents p {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .form_contents {
