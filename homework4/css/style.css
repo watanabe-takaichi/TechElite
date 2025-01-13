@@ -68,9 +68,9 @@ header ul li a:hover {
     width: 100%;
 }
 
-
 /* ↓↓↓ 第４回課題 ↓↓↓ */
-.company_contents h1 {
+/* titleクラスは、「我が社について」「サービス」「お問い合わせ」の三つのタイトルに共通として用いている */
+.title {
     color: black;
     text-align: center;
     padding-top: 50px;
@@ -100,16 +100,6 @@ header ul li a:hover {
     max-width: 750px;
     height: 250px;
     margin-bottom: 30px;
-}
-
-.form h1 {
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 50px;
 }
 
 .form form {
@@ -204,11 +194,14 @@ input[type="submit"] {
     display: none;
 }
 
+.hamburger_menu.open {
+    display: block;
+}
+
 .hamburger_menu li {
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid white;
-    display: block;
 }
 
 .hamburger_menu li:first-child {
@@ -222,13 +215,6 @@ input[type="submit"] {
     padding: 20px;
 }
 /* ↑↑↑ 第４回課題 ↑↑↑ */
-
-.service-title{
-    margin-top: 30px;
-    text-align: center;
-    padding-top: 50px;
-}
-
 .service-contents {
     display: flex;
     margin: 0 auto;
@@ -323,11 +309,6 @@ input[type="submit"] {
     .hamburger {
         display: block;
     }
-
-    .company_contents {
-        height: 200px;
-        margin-bottom: 10px;
-    }
 }
 
 @media screen and (max-width: 450px) {
@@ -348,14 +329,8 @@ input[type="submit"] {
         margin: 5px auto;
     }
 
-    .company_contents {
-        height: 120px;
-    }
-
-    .company_contents h1 {
-        padding-top: 10px;
+    .title {
         font-size: 20px;
-
     }
 
     input,select {
@@ -366,5 +341,4 @@ input[type="submit"] {
         height: 40px;
         width: 150px;
     }
-
 }

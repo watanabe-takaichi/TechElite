@@ -1,7 +1,14 @@
 $(function(){
   $('#hamburger').on('click',function(){
-    $('#hamburger').toggleClass("open");
     $('.hamburger_menu').slideToggle();
+    $('#hamburger_menu').toggleClass("open");
+    $('#hamburger').toggleClass("open");
+  });
+
+  $('.ac').on('click',function(){
+    $('.hamburger_menu').slideToggle();
+    $('#hamburger_menu').toggleClass("open");
+    $('#hamburger').toggleClass("open");
   });
 
   //都道府県と市町村のデータ
@@ -120,7 +127,12 @@ $(function(){
   }
 
   //上記の各関数を実行する
-  const scrollButton = ScrollButton("#header-service", ".service");
+  const scrollButton1 = ScrollButton("#header-contents", ".company");
+  const scrollButton2 = ScrollButton("#header-service", ".services");
+  const scrollButton3 = ScrollButton("#header-form", ".contact");
+  const scrollButton4 = ScrollButton("#header-contents-ac", ".company");
+  const scrollButton5 = ScrollButton("#header-service-ac", ".services");
+  const scrollButton6 = ScrollButton("#header-form-ac", ".contact");
   const button1 = ClickButton("#contents1", "#text1");
   const button2 = ClickButton("#contents2", "#text2");
   const button3 = ClickButton("#contents3", "#text3");

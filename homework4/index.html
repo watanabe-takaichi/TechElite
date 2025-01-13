@@ -9,10 +9,10 @@
 <body>
     <!-- ヘッダー -->
     <nav>
-        <ul class="hamburger_menu">
-            <li><a href="#company_contents">我が社について</a></li>
-            <li><a href="#service-title" id="header-service">サービス</a></li>
-            <li><a href="#form">お問い合わせ</a></li>
+        <ul class="hamburger_menu" id="hamburger_menu">
+            <li><a href="#company ac" class="ac" id="header-contents-ac">我が社について</a></li>
+            <li><a href="#services ac" class="ac" id="header-service-ac">サービス</a></li>
+            <li><a href="#contact ac" class="ac" id="header-form-ac">お問い合わせ</a></li>
         </ul>
     </nav>
     <header>
@@ -21,9 +21,9 @@
                 <li><a href="#">ダミーサイト</a></li>
             </ul>
             <ul class="header-right">
-                <li><a href="#company_contents">我が社について</a></li>
-                <li><a href="#service-title" id="header-service">サービス</a></li>
-                <li><a href="#form">お問い合わせ</a></li>
+                <li><a href="#company" id="header-contents">我が社について</a></li>
+                <li><a href="#services" id="header-service">サービス</a></li>
+                <li><a href="#contact" id="header-form">お問い合わせ</a></li>
             </ul>
         </nav>
         <div id="hamburger" class="hamburger">
@@ -36,11 +36,11 @@
             <h1 id="main-title">ダミーサイトへようこそ</h1>
         </div>
         <div class="company_contents">
-            <h1 id="company_contents">我が社について</h1>
+            <h2 class="title company" id="company">我が社について</h2>
             <p>TechEliteは、顧客に自信をもって<span>「納品」</span>ができるレベルのLPが作れるようになります。</p>
         </div>
         <div class="service" id="service">
-            <h2 class="service-title" id="service-title">サービス</h1>
+            <h2 class="title services" id="services">サービス</h2>
                 <div class="service-contents">
                     <div class="contents active" id="contents1">
                         <h4>WEB制作</h4>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="form" id="form">
-            <h1>お問い合わせ</h1>
+            <h2  class="title contact" id="contact">お問い合わせ</h2>
             <form method="get" action="./thanks.html">
                 <div class="form_contents">
                     <label for="name">名前<span>※必須</span></label>
@@ -96,9 +96,7 @@
                     <label for="tel">電話番号<span>※任意</span></label>
                     <input type="tel" name="tel" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" placeholder="09012345678">
                 </div>
-
                     <input type="submit" name="submit" value="送信">
-
             </form>
         </div>
     </main>

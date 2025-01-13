@@ -8,7 +8,6 @@ body {
 }
 
 /* ヘッダー */
-/* ヘッダー */
 header {
   background-color: #1A48A6;
   position: fixed;
@@ -69,6 +68,7 @@ main h1 {
   height: 24px;
   z-index: 10;
   display: none;
+
 }
 .hamburger span {
   /*3本の線を作る*/
@@ -93,7 +93,7 @@ main h1 {
 }
 .hamburger.open span:nth-of-type(1) {
   /*openのとき、上の線を右斜めにする*/
-  top: 7px;
+  top: 5px;
   transform: translateY(6px) rotate(-40deg);
 }
 .hamburger.open span:nth-of-type(2) {
@@ -102,7 +102,7 @@ main h1 {
 }
 .hamburger.open span:nth-of-type(3) {
   /*下の線を左斜めにする*/
-  top: 19px;
+  top: 17px;
   transform: translateY(-6px) rotate(40deg);
 }
 
@@ -115,11 +115,14 @@ main h1 {
   display: none;
 }
 
+.hamburger_menu.open {
+  display: block;
+}
+
 .hamburger_menu li {
   text-align: center;
   text-decoration: none;
   border-bottom: 1px solid white;
-  display: block;
 }
 
 .hamburger_menu li:first-child {
@@ -152,8 +155,8 @@ main h1 {
   }
 
   main h1 {
-    top: 70%;
-    font-size: 30px;
+    top: 50%;
+    font-size: 27px;
   }
 
   .hamburger {
