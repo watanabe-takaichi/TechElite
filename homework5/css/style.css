@@ -1,0 +1,340 @@
+ * {
+  margin: 0;
+  padding: 0;
+ }
+
+ body {
+  font-family: Noto Sans JP;
+ }
+
+ a {
+  text-decoration: none;
+  color: white;
+ }
+
+ li {
+  list-style: none;
+ }
+ 
+ .main_content {
+  text-align: center;
+ }
+
+ .swiper {
+  top: 67px;
+  margin: 0 auto;
+  /* height: auto; */
+  margin-bottom: 50px;
+}
+
+ .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    background-color: #BEA574 !important;
+    margin: 12px !important;
+ }
+
+  * 前へ次への矢印カスタマイズ */
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* 前へ次への矢印カスタマイズ */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "" !important; /*デフォルトの矢印を削除*/
+    height: 50px;
+    margin: auto;
+    width: 50px;
+    /* font-size: var(--swiper-navigation-size); */
+  }
+
+  /* 前への矢印カスタマイズ */
+  .swiper-button-prev::after {
+    background-image: url(../img/slide-btn-prev.svg);
+  }
+
+  /* 次への矢印カスタマイズ */
+  .swiper-button-next::after {
+    background-image: url(../img/slide-btn-next.svg);
+  }
+
+  /* 画像サイズ調整 */
+  .swiper-slide img {
+    /* height: auto;
+    width: 100%;*/
+    display: inline; 
+    width: auto; 
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+  }
+
+.swiper-scrollbar {
+  display: none;
+}
+
+ .section {
+  max-width: 800px;
+  margin: 0 auto;
+  /* ハンバーガーメニューでタイトルを隠れないように上部の高さを調整 */
+  padding-top: 70px;
+ }
+
+ .about_text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .about_text span{
+  font-size: 60px;
+  font-weight: bold;
+  color: red;
+
+ }
+
+
+ .title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 16px;
+ }
+
+.schedule_flex {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule {
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid #BEA574;
+  background-color: #edebe8;
+}
+
+.description {
+  margin-bottom: 30px;
+  height: auto;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+#schedule1.active,#schedule2.active,#schedule3.active {
+  background-color: #BEA574;
+  color: white;
+}
+
+.description_text.active {
+  display: block;
+  padding: 30px;
+  text-align: left;
+}
+
+.description_text {
+  display: none;
+}
+
+.address {
+  text-align: center;
+  font-size: 12px;
+ }
+
+ .map {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.form form {
+  text-align: center;
+}
+
+.form_contents {
+  width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.form_contents label {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form_contents label span {
+  color: red;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.form_contents.tel label span {
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+}
+
+
+
+input,select {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.firstSubmit {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* フッター */
+footer {
+  background-color: #BEA574;
+  padding: 10px;
+  text-align: center;
+}
+
+footer img {
+  margin: 0 auto;
+}
+
+
+/* 確認画面 */
+ .confirm_content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;
+
+}
+
+.confirm {
+  display: flex;
+  text-align: left;
+  max-width: 400px;
+  margin: 48px auto 0;
+}
+
+.confirm p {
+  padding: 10px;
+  display: block;
+}
+
+.item_name,.item_data {
+  width: 30%;
+}
+
+.confirm_content form {
+  display: flex;
+  margin: 10px auto;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.form_button {
+  margin: 10px 5px;
+  width: 60px;
+  height: 40px;
+  border-radius: 7px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form_button:hover {
+  opacity: 0.5;
+}
+
+.form_button.return {
+  border: 1px solid gray;
+  background-color: gray;
+}
+
+.form_button.nextSubmit {
+  border: 1px solid #BEA574;
+  background-color: #BEA574;
+}
+
+@media screen and (min-width: 751px) {
+  .hamburger_menu li {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about_text {
+    font-size: 20px;
+  }
+
+  .about_text span {
+    font-size: 40px;
+  }
+  
+  .form_contents{
+    width: 400px;
+  }
+
+  /* .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px !important;
+
+ }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px !important;
+ } */
+
+}
+
+@media screen and (max-width: 450px) {
+  .about_text {
+    font-size: 15px;
+  }
+  .about_text span {
+    font-size: 30px;
+  }
+
+  .schedule_content p {
+    font-size: 12px;
+  } 
+
+  .title {
+    font-size: 12px;
+  }
+
+  .form_contents{
+    width: 250px;
+  }
+
+  .form_contents label{
+    font-size: 12px;
+  }
+
+  .section{
+    padding-top: 30px;
+  }
+
+  .about_content.section {
+    padding-top: 50px;
+  }
+}

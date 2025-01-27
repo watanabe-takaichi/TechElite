@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+ body {
+  font-family: Noto Sans JP;
+ }
+
+ a {
+  text-decoration: none;
+  color: white;
+ }
+
+ li {
+  list-style: none;
+ }
+
+/* ヘッダー */
+header {
+  background-color: #BEA574;
+  font-size: 16px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header_contents {
+  /* 直下の要素を横並びにする */
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header_contents ul {
+  /* 直下の要素を横並びにする */
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_contents a {
+  padding: 0 10px;
+}
+
+.header_contents a:hover {
+  opacity: 0.5;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right:40px;
+  cursor: pointer;
+  width: 32px;
+  height: 24px;
+  z-index: 10;
+  display: none;
+}
+.hamburger span {
+  /*3本の線を作る*/
+  transition: all .3s;
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width:100%;
+  z-index: 10;
+}
+.hamburger span:nth-of-type(1) {
+  /*上の線の位置*/
+  top: 4px;
+}
+.hamburger span:nth-of-type(2) {
+  /*真ん中の線の位置*/
+  top: 12px;
+}
+.hamburger span:nth-of-type(3) {
+  /*下の線の位置*/
+  top: 20px;
+}
+.hamburger.open span:nth-of-type(1) {
+  /*openのとき、上の線を右斜めにする*/
+  top: 5px;
+  transform: translateY(6px) rotate(-40deg);
+}
+.hamburger.open span:nth-of-type(2) {
+  /*真ん中の線を消す*/
+  opacity: 0;
+}
+.hamburger.open span:nth-of-type(3) {
+  /*下の線を左斜めにする*/
+  top: 17px;
+  transform: translateY(-6px) rotate(40deg);
+}
+
+.hamburger_menu {
+  position: fixed;
+  background-color: #BEA574;
+  width: 100%;
+  top: 63.5px;
+  z-index: 200;
+  display: none;
+}
+
+.hamburger_menu.open {
+  display: block;
+}
+
+.hamburger_menu li {
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.hamburger_menu li:first-child {
+  border-top: 1px solid white;
+}
+
+.hamburger_menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .header_contents ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
