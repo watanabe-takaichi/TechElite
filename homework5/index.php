@@ -66,35 +66,31 @@
   <!-- 席予約 -->
   <div class="reserve_content section" id="reserve_content">
     <p class="title">席予約</p>
-
-    <div class="form_contents">
-      <form method="post" action="./confirm.php" id="myForm">
-        <label for="name">名前<span>※必須</span></label>
-        <input type="text" name="name" id="name" placeholder="田中太郎" required value="<?php if (isset($_POST["name"])) {echo $_POST["name"];} ?>">
-    </div>
-
-    <div class="form_contents">
-      <label for="seat">席の場所<span>※必須</span></label>
-      <select name="seat" id="seat" required>
-        <option value="">ーーー</option>
-        <option <?= isset($_POST['seat']) == "SS席" ? "selected" : "" ?> value="SS席">SS席</option>
-        <option value="S席" <?= isset($_POST['seat']) == "S席" ? "selected" : "" ?>>S席</option>
-        <option value="A席" <?= isset($_POST['seat']) == "A席" ? "selected" : "" ?>>A席</option>
-        <option value="B席" <?= isset($_POST['seat']) == "B席" ? "selected" : "" ?>>B席</option>
-        <option value="C席" <?= isset($_POST['seat']) == "C席" ? "selected" : "" ?>>C席</option>
-      </select>
-    </div>
-
-    <div class="form_contents">
-      <label for="email">メールアドレス<span>※必須</span></label>
-      <input type="email" id="email" name="email" pattern=".+@example\.com" placeholder="abcd123@example.com" required value="<?php if (isset($_POST["email"])) {echo $_POST["email"];} ?>">
-    </div>
-    <div class="form_contents tel">
-      <label for="tel">電話番号<span>※任意</span></label>
-      <input type="tel" name="tel" id="tel" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" placeholder="09012345678" value="<?php if (isset($_POST["tel"])) {echo $_POST["tel"];} ?>">
-    </div>
-
-    <button type="submit" id="submitBtn" name="submit" class="firstSubmit" disabled>送信</button>
+    <form method="post" action="./confirm.php" id="myForm">
+      <div class="form_contents">
+          <label for="name">名前<span>※必須</span></label>
+          <input type="text" name="name" id="name" placeholder="田中太郎" required value="<?php if (isset($_POST["name"])) {echo $_POST["name"];} ?>">
+      </div>
+      <div class="form_contents">
+        <label for="seat">席の場所<span>※必須</span></label>
+        <select name="seat" id="seat" required>
+          <option value="">ーーー</option>
+          <option <?= isset($_POST['seat']) == "SS席" ? "selected" : "" ?> value="SS席">SS席</option>
+          <option value="S席" <?= isset($_POST['seat']) == "S席" ? "selected" : "" ?>>S席</option>
+          <option value="A席" <?= isset($_POST['seat']) == "A席" ? "selected" : "" ?>>A席</option>
+          <option value="B席" <?= isset($_POST['seat']) == "B席" ? "selected" : "" ?>>B席</option>
+          <option value="C席" <?= isset($_POST['seat']) == "C席" ? "selected" : "" ?>>C席</option>
+        </select>
+      </div>
+      <div class="form_contents">
+        <label for="email">メールアドレス<span>※必須</span></label>
+        <input type="email" id="email" name="email" pattern=".+@example\.com" placeholder="abcd123@example.com" required value="<?php if (isset($_POST["email"])) {echo $_POST["email"];} ?>">
+      </div>
+      <div class="form_contents tel">
+        <label for="tel">電話番号<span>※任意</span></label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" placeholder="09012345678" value="<?php if (isset($_POST["tel"])) {echo $_POST["tel"];} ?>">
+      </div>
+      <button type="submit" id="submitBtn" name="submit" class="firstSubmit" disabled>送信</button>
     </form>
   </div>
 </div>

@@ -194,13 +194,12 @@
   font-size: 12px;
 }
 
-
-
-input,select {
+.form_contents input,.form_contents select {
   width: 100%;
   height: 30px;
   padding: 5px;
   margin: 5px 0;
+  box-sizing: border-box;
 }
 
 .firstSubmit {
@@ -330,11 +329,22 @@ footer img {
     font-size: 12px;
   }
 
-  .section{
-    padding-top: 30px;
-  }
-
   .about_content.section {
     padding-top: 50px;
+  }
+
+  .confirm , .confirm.p {
+    margin: 0;
+    padding: 0 17px;
+  }
+
+  .item_name, .item_data {
+    font-size: 12px;
+    width: 35%;
+  }
+
+  .form_button {
+    width: 45px;
+    height: 25px;
   }
 }
