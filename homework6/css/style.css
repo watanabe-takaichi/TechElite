@@ -1,0 +1,947 @@
+ * {
+  margin: 0;
+  padding: 0;
+ }
+
+ body {
+  font-family: Noto Sans JP;
+ }
+
+ a {
+  text-decoration: none;
+  color: white;
+ }
+
+ li {
+  list-style: none;
+ }
+
+ .main_kv {
+  background-image: url(../img/main.png);
+  max-width: 1440px;
+  height: 812px;
+  background-position: center;
+  background-size: cover;
+  padding: 15px 7px;
+  color: white;
+}
+
+.kv_logo {
+  padding: 0 30px;
+}
+
+.kv_logo img {
+  width: 190px;
+  cursor: pointer;
+}
+
+.kv_contents {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.kv_text {
+  margin-top: 28px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.kv_title {
+  margin-top: 38px;
+}
+
+.kv_date {
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 auto;
+  margin-top: 9px;
+  font-size: 2.4rem;
+  padding: 0px 20px;
+  letter-spacing: -0.06em;
+}
+
+.kv_date span {
+  font-size: 33px;
+}
+
+.kv_area {
+  margin-top: 3px;
+  font-weight: 700;
+  font-size: 29px;
+}
+
+.kv_apply {
+  margin-top: 38px;
+}
+
+
+
+/* contents部分  */
+.contents {
+  background-image: url(../img/contents.svg);
+  height: 1466px;
+  background-position: center;
+  background-size: cover;
+}
+
+.summit {
+  text-align: center;
+  padding: 33px 0;
+}
+
+.limit {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-style: italic;
+  font-weight: 700;
+  color: #81D7FC;
+  font-size: 50px;
+}
+
+.subtitle {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  margin-top: 6px;
+  font-size: 18px;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  justify-content: center; /* 文字を中央寄せ */
+}
+
+.subtitle::before,
+.subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 32px; /* 横線の長さ */
+}
+.subtitle::before {
+  margin-right: 19px; /* 文字との余白 */
+}
+.subtitle::after {
+  margin-left: 23px; /* 文字との余白 */
+}
+
+.summit_text {
+  font-size: 22px;
+  margin-top: 58px;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.summit_detail {
+  margin-top: 38px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.8rem;
+}
+
+.summary {
+  text-align: center;
+  padding: 124px 0 10px;
+}
+
+.summary_detail {
+  margin-top: 50px;
+}
+
+.summary_table {
+  width: 100%;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.summary_table td {
+  font-size: 21px;
+  font-weight: 700;
+  border-bottom: 2px dashed #C4C4C4;
+  padding: 20px 0 20px 4px;
+}
+
+.summary_table_column_sp {
+  display: none;
+}
+
+.summary_table_column {
+  vertical-align: top;
+  width: 190px;
+}
+
+.summary_table_column span {
+  padding: 10px 20px;
+  border: 2px solid #FDD35C;
+  border-radius: 100px;
+  display: block;
+  color: #FDD35C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px 15px;
+}
+
+.summary_table_access {
+  display: flex;
+}
+
+.summary_table_access .station {
+  width: 50%;
+  margin: 0 30px;
+}
+
+.summary_table_access .station ul {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summary_table_access .station ul li {
+  list-style-type: disc;
+  color: #FDD35C;
+  margin-top: 5px;
+}
+
+.summary_table_access .station ul li span {
+  color: #444545;
+}
+
+.summary_table_access .map {
+  width: 50%;
+}
+
+.summary_table_access .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map_sp {
+  display: none;
+}
+
+/* イベント内容 */
+.event_contents {
+  text-align: center;
+  background-color: #FFF6DE;
+  padding: 75px 0;
+  margin-top: 162px;
+}
+
+.contents_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.event_contents .title {
+  color: #FDD35C;
+}
+
+.contents_box {
+  width: 45%;
+  border: 3px solid #FDD35C;
+  border-radius: 10px;
+  margin-top: 54px;
+}
+
+.contents_box_title {
+  background-color: #FDD35C;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding: 9px;
+}
+
+.wrap_detail {
+  background-color: #FFF;
+}
+
+.contents_box_detail {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px 30px 0;
+}
+
+.contents_box_detail p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 360px;
+}
+
+.contents_box_detail img {
+  width: 210px;
+  height: 27px;
+}
+
+.contents_box_text {
+  color: #FDD35C;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contents_box_text span {
+  color: #FDD35C;
+  font-size: 38px;
+  font-style: italic;
+  margin-right: 5px;
+  line-height: 1.9rem;
+}
+
+.event_img {
+  width: 340px;
+  margin-bottom: 16px;
+}
+
+.apply {
+  margin-top: 60px;
+}
+
+
+/* ピックアップ */
+.pickup {
+  padding: 41px 0;
+  text-align: center;
+  border-left: 50px solid #FDD35C;
+  border-right: 50px solid #FDD35C;
+}
+
+.pickup .title {
+  color: #FDD35C;
+}
+
+.pickup_list {
+  margin-top: 20px;
+}
+
+.pickup_list_box {
+  display: flex;
+  margin: 36px 0 -12px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.pickup_list_image {
+  width: 325px;
+  text-align: center;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickup_list_image img {
+  max-width: 100%;
+}
+
+.pickup_list_detail {
+  width: 900px;
+}
+
+/* 出展企業一覧 */
+.exhibitor {
+  background-image: url(../img/exhibitor.svg);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 6px;
+  padding: 43px 0 68px;
+}
+
+.exhibitor_list {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 2.2;
+  text-align: left;
+  width: 888px;
+}
+
+.exhibitor .subtitle::before,
+.exhibitor .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 35px; /* 横線の長さ */
+}
+.exhibitor .subtitle::before {
+  margin-right: 50px; /* 文字との余白 */
+}
+.exhibitor .subtitle::after {
+  margin-left: 60px; /* 文字との余白 */
+}
+
+.exhibitor_list_name {
+  font-size: 19px;
+  font-weight: 500;
+
+}
+
+.exhibitor_detail {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 20px;
+}
+
+
+/* タイムスケジュール */
+.schedule {
+  background-image: url(../img/background_4.png);
+  background-size: cover;
+  text-align: center;
+  padding: 86px 0 50px;
+}
+
+.schedule .title {
+  color: #00A8F0;
+}
+
+.schedule .subtitle {
+  color: #FFF;
+}
+
+.schedule .subtitle::before,
+.schedule .subtitle::after {
+  background-color: #FFF;/* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 35px; /* 横線の長さ */
+}
+
+.schedule_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 42px 0 130px;
+}
+
+.schedule_wrap_card {
+  width: 30%;
+  margin-top: 16px;
+  padding: 0 16px;
+  height: 260px;
+}
+
+.schedule_wrap_card_date {
+  background-color: rgba(241, 251, 255, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.schedule_wrap_card_date .schedule_img {
+  position: absolute;
+  left: -4px;
+  top: 10px;
+}
+
+.schedule_wrap_card_date p {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  font-weight: 700;
+}
+
+.schedule_wrap_card_contents_images {
+  height: 130px;
+}
+
+.schedule_wrap_card_contents_detail {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  text-align: left;
+}
+
+
+/* よくある質問 */
+.faq {
+  background-image: url(../img/exhibitor.svg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 95px 0 100px 0;
+}
+
+.faq .title {
+  color: #FDD35C;
+}
+
+.faq_list {
+  margin-top: 40px;
+}
+
+.faq_list_box {
+  /* padding: 23px 105px 0; */
+  padding: 15px 10px;
+  margin: 10px 93px;
+  line-height: 2.5rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.faq_list_box_question {
+  display: flex;
+  align-items: center;
+}
+
+.faq_list_boq_question_top {
+  background-color: #00A8F0;
+  border-radius: 50%;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.faq_list_boq_question_bottom {
+  width: calc(100% - 30px);
+  text-align: left;
+}
+
+.faq_list_box_answer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.faq_list_boq_answer_top {
+  background-color: #FDD35C;
+  border-radius: 50%;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.faq_list_boq_answer_bottom {
+  width: calc(100% - 30px);
+  text-align: left;
+}
+
+.faq_list_boq_answer_bottom a {
+  color: black;
+}
+
+
+/* フッター */
+.footer {
+  text-align: center;
+  background-color: #333333;
+  color: #FFF;
+  padding: 20px 0;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.footer_exhibit {
+  text-align: center;
+  padding-bottom: 56px;
+  border-bottom: 0.5px solid #FFF;
+  margin-top: 50px;
+}
+
+.footer_exhibit a {
+  color: #FFF;
+  padding: 8px 40px;
+  border: 1px solid #FFF;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer_detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 34px auto 0;
+}
+
+.footer_detail span {
+  margin-right: 10px;
+}
+
+.footer_detail img {
+  width: 220px;
+  height: 55px;
+}
+
+.footer_detail a {
+  margin-left: 30px;
+  color: #FFF;
+}
+
+.applyContents {
+  text-align: center;
+  position: fixed;
+  display: block;
+  bottom: 50%;
+  right: 0;
+  padding: 10px 0px 10px 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .contents_wrap {
+    width: 80%;
+  }
+
+  .contents_box_title {
+    font-size: 16px;
+  }
+
+  .contents_box_detail p {
+    width: 290px;
+  }
+
+  .contents_box_detail img {
+    width: 110px;
+    height: 15px;
+  }
+
+  .contents_box_text {
+    font-size: 15px;
+  }
+
+  .contents_box_text span {
+    font-size: 17px;
+    line-height: 0;
+  }
+
+  .event_img {
+    width: 310px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main_kv {
+    background-image: url(../img/background_sp.png);
+    max-width: 768px;
+    height: 436px;
+    padding: 13px 10px;
+  }
+
+  .kv_title {
+    margin-top: 28px;
+  }
+
+  .kv_logo {
+    padding: 0px;
+  }
+  
+  .kv_logo img {
+    width: 78px;
+  }
+  
+  .kv_contents {
+    text-align: center;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .kv_text {
+    margin-top: 34px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .kv_title {
+    margin-top: 20px;
+  }
+
+  .kv_title img {
+    width: 87%;
+  }
+  
+  .kv_date {
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    padding: 0px 20px;
+    letter-spacing: -0.04em;
+  }
+  
+  .kv_date span {
+    font-size: 13px;
+  }
+  
+  .kv_area {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .kv_apply {
+    display: none;
+  }
+  
+  .contents {
+    height: 1100px;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+  
+  .subtitle {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  
+  .subtitle::before,
+  .subtitle::after {
+    background-color: #444545; /* 横線の色 */
+    content: "";
+    height: 1px; /* 横線の高さ */
+    width: 17px; /* 横線の長さ */
+  }
+  .subtitle::before {
+    margin-right: 19px; /* 文字との余白 */
+  }
+  .subtitle::after {
+    margin-left: 17px; /* 文字との余白 */
+  }
+  
+  .summit_text {
+    display: none;
+  }
+  
+  .summit_detail {
+    margin-top: 23px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 2.3rem;
+    padding: 0 38px;
+  }
+  
+  .summary {
+    padding: 0;
+  }
+  
+  .summary_detail {
+    margin-top: 0;
+  }
+  
+  .summary_table {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  .summary_table td {
+    font-size: 13px;
+    padding: 9px 2px;
+    line-height: 2.1rem;
+    border-bottom: 1px dashed #C4C4C4;
+  }
+
+  .summary_table_column_pc {
+    display: none;
+  }
+
+  .summary_table_column_sp {
+    display: block;
+  }
+  
+  .summary_table_column {
+    width: 132px;
+  }
+  
+  .summary_table_column span {
+    padding: 2px 0;
+    font-size: 14px;
+    margin: 0;
+    width: 100px;
+  }
+  
+  .summary_table_access {
+    display: block;
+  }
+  
+  .summary_table_access .station {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .summary_table_access .station ul {
+    line-height: 1.2rem;
+  }
+  
+  .summary_table_access .station ul li {
+    margin-top: 5px;
+  }
+  
+  .summary_table_access .map {
+    width: 100%;
+    display: none;
+  }
+  .map_sp {
+    display: block;
+    margin: 0 10px;
+  }
+  
+  .map_sp iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .applyContents {
+    display: none;
+  }
+
+
+  /* イベント内容 */
+.event_contents {
+  padding: 0 20px 5px;
+  margin-top: 0;
+}
+
+.contents_wrap {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contents_box {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.contents_box_title {
+  font-size: 18px;
+  text-align: center;
+  padding: 9px 12px;
+}
+
+.contents_box_detail {
+  padding: 12px 30px 0;
+}
+
+.contents_box_detail p {
+  font-size: 11px;
+  width: 250px;
+}
+
+.contents_box_detail img {
+  width: 200px;
+  height: 19px;
+}
+
+.contents_box_text {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contents_box_text span {
+  font-size: 30px;
+  margin-right: 5px;
+  line-height: 1.2rem;
+}
+
+.event_img {
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.apply {
+  display: none;
+}
+
+/* ピックアップ */
+.pickup_list_box {
+  font-weight: 500;
+}
+
+
+
+
+/* タイムスケジュール */
+.schedule {
+  padding: 86px 0 50px;
+}
+
+.schedule_wrap {
+  margin-top: 42px;
+}
+
+.schedule_wrap_card {
+  width: 42%;
+  margin-top: 16px;
+  padding: 0 26px;
+  height: auto;
+}
+
+.schedule_wrap_card_date {
+  background-color: rgba(241, 251, 255, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.schedule_wrap_card_date .schedule_img {
+  position: absolute;
+  left: -4px;
+  top: 10px;
+}
+
+.schedule_wrap_card_date p {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  font-weight: 700;
+}
+
+.schedule_wrap_card_contents_images {
+  height: 130px;
+}
+
+.schedule_wrap_card_contents_detail {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  text-align: left;
+}
+
+}
+
+@media screen and (max-width: 575px) {
+  .contents {
+    height: auto;
+  }
+
+  .pickup {
+    display: none;
+  }
+
+  .schedule_wrap_card {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 26px;
+  }
+}
