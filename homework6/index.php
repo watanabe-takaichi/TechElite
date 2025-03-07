@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>第六回課題</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="main_kv">
-    <div class="kv_logo"><a href=""><img src="../img/stocksun_logo.png" alt="ストックサンロゴ"></a></div>
+    <div class="kv_logo"><a href=""><img src="./img/stocksun_logo.png" alt="ストックサンロゴ"></a></div>
     <div class="kv_contents">
       <div class="kv_text">日本最大規模のフリーランスイベント</div>
-      <div class="kv_title"><img src="../img/kv.svg" alt="フリーランスサミット"></div>
+      <div class="kv_title"><img src="./img/kv.svg" alt="フリーランスサミット"></div>
       <div class="kv_date">3/4 <span>Sat</span> 10:00-18:00</div>
       <div class="kv_area">東京国際フォーラム ホールE2</div>
-      <div class="kv_apply"><a href="#" target="_blank"><img src="../img/button.png" alt="LINE申し込み"></a></div>
+      <div class="kv_apply"><a href="#" target="_blank"><img src="./img/button.png" alt="LINE申し込み"></a></div>
     </div>
   </div>
 
+  <!-- フリーランスサミット概要 -->
   <div class="contents">
     <div class="summit">
       <div class="limit">
@@ -92,7 +93,7 @@
     </div>
   </div>
 
-
+  <!-- イベント内容 -->
   <div class="event_contents">
     <div class="limit">
       <div class="title">Contents</div>
@@ -102,23 +103,23 @@
         <div class="contents_box">
           <div class="contents_box_title">フリーランスに特化した企業エリア</div>
           <div class="wrap_detail">
-            <div class="contents_box_detail"><p>出会いたい企業にきっと出会える</p><img src="../img/Vector.svg" alt="青い線"></div>
+            <div class="contents_box_detail"><p>出会いたい企業にきっと出会える</p><img src="./img/Vector.svg" alt="青い線"></div>
             <div class="contents_box_text"><span class="number">60</span>ブースの企業エリア</div>
-            <img src="../img/event1.png" alt="会場の様子" class="event_img">
+            <img src="./img/event1.png" alt="会場の様子" class="event_img">
           </div>
         </div>
 
         <div class="contents_box">
           <div class="contents_box_title">各業界の著名人が登壇</div>
           <div class="wrap_detail">
-            <div class="contents_box_detail"><p>ここでしか聞けない話が聞ける</p><img src="../img/Vector.svg" alt="青い線"></div>
+            <div class="contents_box_detail"><p>ここでしか聞けない話が聞ける</p><img src="./img/Vector.svg" alt="青い線"></div>
             <div class="contents_box_text">豪華セミナーを開催</div>
-            <img src="../img/event2.png" alt="会場の様子" class="event_img">
+            <img src="./img/event2.png" alt="会場の様子" class="event_img">
           </div>
         </div>
       </div>
 
-      <div class="apply"><a href="#" target="_blank"><img src="../img/button.png" alt="LINE申し込みボタン"></a></div>
+      <div class="apply"><a href="#" target="_blank"><img src="./img/button.png" alt="LINE申し込みボタン"></a></div>
     </div>
   </div>
 
@@ -129,31 +130,31 @@
       <div class="subtitle">注目の企業</div>
       <div class="pickup_list">
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="../img/pickup_list1.png" alt="会社ロゴ" width="110" height="30"></a></div>
+          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list1.png" alt="会社ロゴ" width="110" height="30"></a></div>
           <div class="pickup_list_detail">
           オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。<br>https://oplan.co.jp/
           </div>
         </div>
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="../img/pickup_list2.png" alt="会社ロゴ" width="223" height="19"></a></div>
+          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list2.png" alt="会社ロゴ" width="223" height="19"></a></div>
           <div class="pickup_list_detail">
           ITフリーランスの仕事探しなら【PE-BANK】へ。Web・SE系を中心に毎月1,000件以上のご紹介。
           </div>
         </div>
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="../img/pickup_list3.png" alt="会社ロゴ" width="267" height="30"></a></div>
+          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list3.png" alt="会社ロゴ" width="267" height="30"></a></div>
           <div class="pickup_list_detail">
           台湾の「食文化」の導入により、日本の飲食業をクリエイティブに。
           </div>
         </div>
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="../img/pickup_list4.png" alt="会社ロゴ" width="124" height="57"></a></div>
+          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list4.png" alt="会社ロゴ" width="124" height="57"></a></div>
           <div class="pickup_list_detail">
-          月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br><img src="../img/pickup_list6.png" alt="ミニ会社ロゴ" width="95" height="21">：https://sucsak.com/
+          月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br><img src="./img/pickup_list6.png" alt="ミニ会社ロゴ" width="95" height="21">：https://sucsak.com/
           </div>
         </div>
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="../img/pickup_list5.png" alt="会社ロゴ" width="103" height="42"></a></div>
+          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list5.png" alt="会社ロゴ" width="103" height="42"></a></div>
           <div class="pickup_list_detail">
           1000業種以上の圧倒的運用実績！リスティング、Facebook・TwitterなどのSNS広告もおまかせ。
           </div>
@@ -184,10 +185,10 @@
           
           <div class="schedule_wrap_card">
             <div class="schedule_wrap_card_date">
-              <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+              <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
               <p>10:00〜</p>
               <div class="schedule_wrap_card_contents">
-                <div class="schedule_wrap_card_contents_images"><img src="../img/face1.png" alt="顔写真" width="130" height="134"></div>
+                <div class="schedule_wrap_card_contents_images"><img src="./img/face1.png" alt="顔写真" width="130" height="134"></div>
                 <div class="schedule_wrap_card_contents_detail">今、SNSを始めるなら</div>
               </div>
             </div>
@@ -195,10 +196,10 @@
 
           <div class="schedule_wrap_card">
             <div class="schedule_wrap_card_date">
-              <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+              <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
               <p>11:00〜</p>
               <div class="schedule_wrap_card_contents">
-                <div class="schedule_wrap_card_contents_images"><img src="../img/face2.png" alt="顔写真" width="130" height="134"></div>
+                <div class="schedule_wrap_card_contents_images"><img src="./img/face2.png" alt="顔写真" width="130" height="134"></div>
                 <div class="schedule_wrap_card_contents_detail">会社員で出世する人と独立して成功する人の適正について</div>
               </div>
             </div>
@@ -206,10 +207,10 @@
 
           <div class="schedule_wrap_card">
             <div class="schedule_wrap_card_date">
-              <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+              <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
               <p>11:40〜</p>
               <div class="schedule_wrap_card_contents">
-                <div class="schedule_wrap_card_contents_images"><img src="../img/face3.png" alt="顔写真" width="130" height="134"></div>
+                <div class="schedule_wrap_card_contents_images"><img src="./img/face3.png" alt="顔写真" width="130" height="134"></div>
                 <div class="schedule_wrap_card_contents_detail">営業出身のフリーランスの生存戦略</div>
               </div>
             </div>
@@ -217,10 +218,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>12:20〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face4.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face4.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">無数のフリーランスに発注してわかった優秀な人の特徴</div>
                 </div>
               </div>
@@ -228,10 +229,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>13:00〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face5.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face5.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">現役上場企業社長が語る最新WEBマーケティング論</div>
                 </div>
               </div>
@@ -239,10 +240,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>13:40〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face6.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face6.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">月収300万円までのロードマップ</div>
                 </div>
               </div>
@@ -250,10 +251,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>14:20〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face7.png" alt="顔写真" width="250" height="112"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face7.png" alt="顔写真" width="250" height="112"></div>
                   <div class="schedule_wrap_card_contents_detail">SNSを伸ばした先に見える世界</div>
                 </div>
               </div>
@@ -261,10 +262,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>15:00〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face8.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face8.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">元サイバーエージェント局長による広告業界の未来予想図</div>
                 </div>
               </div>
@@ -272,10 +273,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>15:40〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face9.png" alt="顔写真" width="242" height="124"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face9.png" alt="顔写真" width="242" height="124"></div>
                   <div class="schedule_wrap_card_contents_detail">エンジニアとして独立し、年収3000万円を超える方法</div>
                 </div>
               </div>
@@ -283,10 +284,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>16:20〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face10.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face10.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">累計300人以上、起業家を見て感じた成功法則</div>
                 </div>
               </div>
@@ -294,10 +295,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>17:00〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face11.png" alt="顔写真" width="130" height="134"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face11.png" alt="顔写真" width="130" height="134"></div>
                   <div class="schedule_wrap_card_contents_detail">フリーランスにおすすめのM＆Aトレンドを紹介</div>
                 </div>
               </div>
@@ -305,10 +306,10 @@
 
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
-                <img src="../img/TimeVector.png" alt="時刻表示" class="schedule_img">
+                <img src="./img/TimeVector.png" alt="時刻表示" class="schedule_img">
                 <p>MC</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="../img/face12.png" alt="顔写真" width="242" height="124"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face12.png" alt="顔写真" width="242" height="124"></div>
                 </div>
               </div>
           </div>
@@ -335,7 +336,7 @@
               </div>
             </div>
 
-            <div class="faq_list_box">
+            <div class="faq_list_box sp">
               <div class="faq_list_box_question">
                 <div class="faq_list_boq_question_top"> Q </div>
                 <div class="faq_list_boq_question_bottom"> 入場にお金はかかりますか？ </div>
@@ -346,7 +347,7 @@
               </div>
             </div>
 
-            <div class="faq_list_box">
+            <div class="faq_list_box sp">
               <div class="faq_list_box_question">
                 <div class="faq_list_boq_question_top"> Q </div>
                 <div class="faq_list_boq_question_bottom"> 出展を希望する企業はどこから問い合わせれば良いですか？ </div>
@@ -368,7 +369,7 @@
         <div class="footer_exhibit"><a href="#" target="_blank">出展希望企業はこちら</a></div>
         <div class="footer_detail">
           <span>運営会社</span>
-          <img src="../img/fv_logo.png" alt="StockSunロゴ" target="_blank">
+          <img src="./img/fv_logo.png" alt="StockSunロゴ" target="_blank">
           <a href="#" target="_blank">個人情報保護方針</a>
         </div>
       </div>
@@ -376,7 +377,7 @@
 
     <!-- LINE申し込み -->
    <div class="applyContents">
-    <a href="#" target="_blank"><img src="../img/side_button.svg" alt="LINE申し込みボタン"></a>
+    <a href="#" target="_blank"><img src="./img/side_button.svg" alt="LINE申し込みボタン"></a>
    </div>
 </body>
 </html>
